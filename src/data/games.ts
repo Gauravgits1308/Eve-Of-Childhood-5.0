@@ -87,7 +87,7 @@ export const GAMES: Game[] = [
     description:
       'A childhood classic returns. Knock down the stack, rebuild it, and race against the opposition.',
     registrationButton: 'REGISTER FOR SEVEN STONES',
-    formUrl: 'https://forms.gle/STQ5DCMPFBC1RRP67',
+    formUrl: 'https://forms.gle/STQ5DCMPFBC1RRP6',
     visualDirection:
       'Stacked stone-inspired shapes, hand-drawn playground graphics, and layered compositions',
     category: 'Precision & Legend',
