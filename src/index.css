@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #070B09;
+    --bg-secondary: #101713;
+    --bg-card: #17221B;
+    --bg-card-hover: #1E2D24;
+    --green-primary: #00D68F;
+    --lime-accent: #D2FF52;
+    --text-white: #F6F8F5;
+    --text-muted: #A2AEA5;
+    --font-sports: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+    --font-display: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    background-color: var(--bg-primary);
+    color: var(--text-white);
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: #070B09;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, .font-sports {
+    font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+    letter-spacing: -0.025em;
+  }
+
+  .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Sports Diagonal Hatch & Court Lines */
+.bg-sports-diagonal {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.015),
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 12px
+  );
+}
+
+.bg-sports-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 224, 115, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 224, 115, 0.05) 1px, transparent 1px);
+}
+
+/* Angular Chamfered Clips */
+.clip-chamfer-tr {
+  clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 0 100%);
+}
+
+.clip-chamfer-br {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%);
+}
+
+.clip-slant {
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.clip-tag {
+  clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 0 100%);
+}
+
+/* Sports Glow & Highlights */
+.glow-sports {
+  box-shadow: 0 0 20px -2px rgba(0, 224, 115, 0.35);
+}
+
+.glow-lime {
+  box-shadow: 0 0 20px -2px rgba(212, 255, 0, 0.45);
+}
+
+/* Custom Sports Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1C2329;
+  border-radius: 0px;
+  border: 1px solid rgba(0, 224, 115, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00E073;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
