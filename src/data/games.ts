@@ -12,7 +12,7 @@ export const GAMES: Game[] = [
     description:
       'Speed, strategy, agility, and lightning-fast chases. Bring your team and own the playground.',
     registrationButton: 'REGISTER FOR KHO KHO',
-    formUrl: 'https://forms.gle/SLRASAGLqXZ7o1fB8',
+    formUrl: 'https://docs.google.com/forms/d/e/1FAIpQLScg25wrprKUMCzvSlelCYXC56SwvczCxuQ0UaVouanVMdkkZA/viewform?usp=sharing&ouid=100305418463900605995',
     visualDirection:
       'Dynamic chase-inspired lines, ground markings, motion trails, and sports silhouette',
     category: 'Agility & Chase',
